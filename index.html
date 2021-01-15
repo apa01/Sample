@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | SampleSatGame</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 650px; height: 380px; background: #231F20"></canvas>
+    <script src="Build/Sample.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Sample.data.gz",
+        frameworkUrl: "Build/Sample.framework.js.gz",
+        codeUrl: "Build/Sample.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Apa",
+        productName: "SampleSatGame",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
